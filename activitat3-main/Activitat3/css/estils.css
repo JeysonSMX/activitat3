@@ -1,0 +1,211 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffff00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+/* --- Capçalera i Menú Superior --- */
+.capcalera-site {
+    background-color: #4c4c4c;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.img-logo-top {
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+.menu-navegacio {
+    background-color: #333333;
+    padding: 6px 0;
+}
+
+.menu-navegacio ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.menu-navegacio a {
+    color: #e27a19;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.menu-navegacio a:hover,
+.menu-navegacio a.actiu {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* --- Contenidor Blanc Central --- */
+.contenidor-principal {
+    max-width: 760px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px 35px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2b547e;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* --- EXERCI 1: Flexbox 2 Columnes (Arcs de la sèrie) --- */
+.layout-dos-columnes {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.columna-llista {
+    flex: 1;
+}
+
+.columna-imatges {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.columna-imatges img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #cccccc;
+}
+
+/* Icona personalizada icono-cine.png per a les sagues */
+ul.llista-sagues {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.llista-sagues > li {
+    background-image: url('../img/icono-cine.png');
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding-left: 22px;
+    font-weight: bold;
+    color: #1a5276;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+ol.subllista-arcs {
+    margin-left: 20px;
+    font-weight: normal;
+    color: #000000;
+}
+
+ol.subllista-arcs li {
+    margin-bottom: 2px;
+}
+
+/* --- EXERCI 2: Personatges (Llista de definició i àncores) --- */
+ul.index-personatges {
+    list-style-type: circle; /* Pics canviats a circle */
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+ul.index-personatges li {
+    margin-bottom: 3px;
+}
+
+dl.llista-personatges dt {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+dl.llista-personatges dd {
+    margin-bottom: 20px;
+}
+
+.bloc-personatge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-personatge {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px 0 5px 0;
+}
+
+.boto-saber-mes {
+    background-color: #666666;
+    color: #ffffff !important;
+    padding: 3px 12px;
+    font-size: 11px;
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.boto-saber-mes:hover {
+    background-color: #333333;
+    border-bottom: none !important;
+}
+
+/* --- Enllaços generals --- */
+a {
+    color: #e27a19;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+
+/* --- Peu de pàgina lila --- */
+.peu-pagina {
+    background-color: #8c429c;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.contenidor-peu {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-fandom, .logo-op-wiki {
+    height: 40px;
+}
